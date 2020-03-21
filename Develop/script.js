@@ -2,7 +2,7 @@
 // setting values to generate password
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var speciarChars = "!@#$%&*";
+var speciarChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0123456789";
 
 
