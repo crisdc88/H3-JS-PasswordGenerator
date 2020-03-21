@@ -35,7 +35,7 @@ var userChoices = [
 ]
 
 // array with user's selected options
-var userSelectedOptions=[];
+var userSelectedOptions = [];
 
 
 // Assignment Code
@@ -63,40 +63,43 @@ function generatePassword() {
 
 
   console.log("list of user choices:  [" + userSelectedOptions + "]");
-  
 
-  //do this until I have the number of characters choosen by the user:
-  for (var i = 0; i < passwordLength; i++) {
+  if (userSelectedOptions.length > 0) {
+    //do this until I have the number of characters choosen by the user:
+    for (var i = 0; i < passwordLength; i++) {
 
-    console.log("run  for character :" + i);
-    
-    //choosing a random Index to select an option for the character (upper case, lower case ..)
-    var randIndexofChosen = Math.floor(Math.random() * (userSelectedOptions.length));
-    console.log("1. for loop randomIndex:    " + randIndexofChosen);
+      console.log("run  for character :" + i);
 
-    //getting the index of userChoices from the user selected array.
-    var indexOfObject = userSelectedOptions[randIndexofChosen];
-    console.log("2. index of object:" + indexOfObject);
+      //choosing a random Index to select an option for the character (upper case, lower case ..)
+      var randIndexofChosen = Math.floor(Math.random() * (userSelectedOptions.length));
+      console.log("1. for loop randomIndex:    " + randIndexofChosen);
 
-    //getting the value for the selected option.
-    var valueCharactersRandomOption = userChoices[indexOfObject].choiceOptions;
-    console.log("3. option value: " + valueCharactersRandomOption);
+      //getting the index of userChoices from the user selected array.
+      var indexOfObject = userSelectedOptions[randIndexofChosen];
+      console.log("2. index of object:" + indexOfObject);
 
-    //choosing a random Index whithing the option selected
-    var randomOptionsIndex = Math.floor(Math.random() *valueCharactersRandomOption.length);
-    console.log("4. random index of value:  " + randomOptionsIndex + " , lenght :" + valueCharactersRandomOption.length);
+      //getting the value for the selected option.
+      var valueCharactersRandomOption = userChoices[indexOfObject].choiceOptions;
+      console.log("3. option value: " + valueCharactersRandomOption);
 
-
-    //choosing a random character for that specific option
-    var tempCharacter =  valueCharactersRandomOption[randomOptionsIndex];
-    console.log("5. character choosen: " + tempCharacter);
+      //choosing a random Index whithing the option selected
+      var randomOptionsIndex = Math.floor(Math.random() * valueCharactersRandomOption.length);
+      console.log("4. random index of value:  " + randomOptionsIndex + " , lenght :" + valueCharactersRandomOption.length);
 
 
-    //adding the character to my password string
-    password = password + tempCharacter;
+      //choosing a random character for that specific option
+      var tempCharacter = valueCharactersRandomOption[randomOptionsIndex];
+      console.log("5. character choosen: " + tempCharacter);
+
+
+      //adding the character to my password string
+      password = password + tempCharacter;
+    }
+    return password
+  }else{
+    alert("Please choose at least one option.")
   }
-
-  return password
+  
 }
 
 function getInitialValue() {
@@ -131,7 +134,7 @@ function getUserConditions(initialValue) {
       answer = confirm(userChoices[i].choiceMessage);
       console.log("user choice :" + i + "  :" + answer);
 
-      if(answer===true) {
+      if (answer === true) {
         console.log("adding option to array")
         userSelectedOptions.push(i);
       }
