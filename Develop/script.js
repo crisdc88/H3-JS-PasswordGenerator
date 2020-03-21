@@ -107,7 +107,7 @@ function getInitialValue() {
     var userInput1 = prompt("How long would you like your Password?. \nPlease choose a number greather than 6 and less than 12.");
     console.log("1.user input inside the while:  " + userInput1);
 
-    if (userInput1 >= 6 && userInput1 <= 12) {
+    if (userInput1 >= 6 && userInput1 <= 128) {
       //keeptrying = false;
       return userInput1;
     } else {

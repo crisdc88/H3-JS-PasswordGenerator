@@ -1,6 +1,47 @@
-# 03 JavaScript: Password Generator
+# HOMEWORK 03 JavaScript: Password Generator
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+This application generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered JavaScript code.
+
+## GettingStarted
+
+Where is the project?
+
+>[github repository](https://github.com/crisdc88/H1-codeRefactor/)
+
+## Prerequisites
+
+>N/A
+
+## Built With
+
+* HTML
+* CSS
+
+## Deployed Link
+
+>[deployed URL: https://crisdc88.github.io/H3-JS-PasswordGenerator](https://crisdc88.github.io/H3-JS-PasswordGenerator/)
+
+## Code block
+
+1. Open index.html
+2. Find the following code block on line 
+
+```
+
+```
+
+## Author
+
+D. Cristina Terry.
+GitHub: [https://github.com/crisdc88/](https://github.com/crisdc88/),
+
+LinkedIn: [www.linkedin.com/in/dcristinaterry](www.linkedin.com/in/dcristinaterry)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+C
+reate an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
 
