@@ -1,15 +1,5 @@
 
-// setting values to generate password
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var speciarChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-var numbers = "0123456789";
-
-
-
-var userLenght = 0;
-
-// setting values for client response
+// setting Object values for client response
 
 var userChoices = [
   {
@@ -40,10 +30,9 @@ var userSelectedOptions = [];
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 // Write password to the #password input
 function writePassword() {
-
-
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
@@ -140,5 +129,4 @@ function getUserConditions(initialValue) {
       }
     }
   }
-
 }

@@ -8,7 +8,7 @@ In order to generate a password the user most enter the length of the password t
 
 Where is the project?
 
->[github repository](https://github.com/crisdc88/H1-codeRefactor/)
+>[github repository](https://github.com/crisdc88/H3-H3-JS-PasswordGenerator/)
 
 ## Prerequisites
 
@@ -25,11 +25,22 @@ Where is the project?
 
 ## Code block
 
-1. Open index.html
-2. Find the following code block on line 
+1. Open scritp.js
+2. Find the following code showing the use of objects : 2.a.
+3. Find the following code showing implementation of random integer numbers.
 
 ```
+2 a.
+var userChoices = [
+  {
+    option: "upperCase",
+    choiceOptions: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    choiceMessage: "Would you like to include Upper Case letters?"
+  },
 
+
+ 3.a
+ var randIndexofChosen = Math.floor(Math.random() * (userSelectedOptions.length));
 ```
 
 ## Author
