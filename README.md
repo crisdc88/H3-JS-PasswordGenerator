@@ -21,7 +21,7 @@ Where is the project?
 
 ## Deployed Link
 
->[deployed URL: https://crisdc88.github.io/H3-JS-PasswordGenerator](https://crisdc88.github.io/H3-JS-PasswordGenerator/)
+>[deployed URL: https://dcristinaterry.github.io/H3-JS-PasswordGenerator/](https://dcristinaterry.github.io/H3-JS-PasswordGenerator/)
 
 ## Code block
 
